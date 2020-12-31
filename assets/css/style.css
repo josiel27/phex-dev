@@ -6,13 +6,21 @@
 */
 
 /*--------------------------------------------------------------
-# General
+# Variables for CSS - Josiel
 --------------------------------------------------------------*/
 :root {
-  --primary: #ff5821;
+  /* --primary: #ff5821;
   --secondary: #ff7e54;
-  --primary-hover: #ff774a;
+  --primary-hover: #ff774a; */
+  --primary: #264173;
+  --secondary: #e63a34;
+  --primary-hover: #64728b;
+  --topbar: #292a2d;
 }
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -72,7 +80,7 @@ h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: #39312f;
+  background: var(--topbar);
   font-size: 14px;
   padding: 0;
   color: rgba(255, 255, 255, 0.8);
@@ -116,7 +124,7 @@ h6 {
 }
 
 #topbar .cta a:hover {
-  background: #ff6b3b;
+  background: var(--primary-hover);
 }
 
 /*--------------------------------------------------------------
@@ -153,6 +161,7 @@ h6 {
 #header .logo img {
   padding: 0;
   margin: 0;
+  margin-top: 5px;
   max-height: 40px;
 }
 
